@@ -54,6 +54,7 @@
                       <option value="1296 0730 25 25 2592 1944">16:9 wide FOV</option>
                       <option value="1296 0976 25 25 2592 1944">4:3 full FOV</option>
                       <option value="1920 1080 01 30 2592 1944">Std FOV, x30 Timelapse</option>
+                      <option value="0640 0480 25 25 2592 1994">Quanticare options</option>
                     </select><br>
                     Custom Values:<br>
                     Video res: <input type="text" size=4 id="video_width">x<input type="text" size=4 id="video_height">px<br>
@@ -69,7 +70,7 @@
                 <tr>
                   <td>Annotation (max 31 characters):</td>
                   <td>
-                    Text: <input type="text" size=20 id="annotation"><input type="button" value="OK" onclick="send_cmd('an ' + encodeURI(document.getElementById('annotation').value))"><input type="button" value="Default" onclick="document.getElementById('annotation').value = 'RPi Cam %04d.%02d.%02d_%02d:%02d:%02d'; send_cmd('an ' + encodeURI(document.getElementById('annotation').value))"><br>
+                    Text: <input type="text" size=20 id="annotation"><input type="button" value="OK" onclick="send_cmd('an ' + encodeURI(document.getElementById('annotation').value))"><input type="button" value="Default" onclick="document.getElementById('annotation').value = ' '; send_cmd('an ' + encodeURI(document.getElementById('annotation').value))"><br>
                     Black background: <input type="button" value="ON" onclick="send_cmd('ab 1')"><input type="button" value="OFF" onclick="send_cmd('ab 0')">
                   </td>
                 </tr>
