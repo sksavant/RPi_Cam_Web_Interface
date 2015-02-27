@@ -54,7 +54,7 @@
                       <option value="1296 0730 25 25 2592 1944">16:9 wide FOV</option>
                       <option value="1296 0976 25 25 2592 1944">4:3 full FOV</option>
                       <option value="1920 1080 01 30 2592 1944">Std FOV, x30 Timelapse</option>
-                      <option value="0640 0480 25 25 2592 1994">Quanticare options</option>
+                      <option value="0640 0480 90 90 2592 1994">Quanticare options</option>
                     </select><br>
                     Custom Values:<br>
                     Video res: <input type="text" size=4 id="video_width">x<input type="text" size=4 id="video_height">px<br>
