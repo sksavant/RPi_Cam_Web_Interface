@@ -150,7 +150,8 @@ ajax_status.onreadystatechange = function() {
     else if(ajax_status.responseText == "video") {
       document.getElementById("video_button").disabled = false;
       document.getElementById("video_button").value = "record video stop";
-      document.getElementById("video_button").onclick = function() {send_cmd("ca 0");};
+      document.getElementById("video_button").className = "btn btn-danger";
+      document.getElementById("video_button").onclick = function() { if confirm("Stop Video capture?"){send_cmd("ca 0");}};
       document.getElementById("image_button").disabled = true;
       document.getElementById("image_button").value = "record image";
       document.getElementById("image_button").onclick = function() {};
